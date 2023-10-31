@@ -1,0 +1,14 @@
+apiVersion: platform.upbound.io/v1alpha1
+kind: App
+metadata:
+  name: configuration-app
+  namespace: default
+spec:
+  compositeDeletePolicy: Foreground
+  parameters:
+    providerConfigName: uptest
+    passwordSecretRef:
+      namespace: default
+      name: configuration-app-mariadb
+  writeConnectionSecretToRef:
+    name: configuration-app
