@@ -3,4 +3,4 @@ kind: Configuration
 metadata:
   name: configuration-app
 spec:
-  package: xpkg.upbound.io/upbound/configuration-app:v0.1.0
+  package: xpkg.upbound.io/upbound/configuration-app:v0.2.0
