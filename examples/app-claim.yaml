@@ -9,6 +9,8 @@ metadata:
 spec:
   compositeDeletePolicy: Foreground
   parameters:
+    helm:
+      wait: false
     providerConfigName: uptest
     passwordSecretRef:
       namespace: default

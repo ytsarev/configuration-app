@@ -53,6 +53,11 @@ spec:
                             version:
                               type: string
                               description: chart version
+                        wait:
+                          type: boolean
+                          decription: |
+                            Whether to wait or not for resources to be healthy or deletd when installing
+                            or deleting the chart
                     passwordSecretRef:
                       type: object
                       description: "A reference to the Secret object containing database credentials"

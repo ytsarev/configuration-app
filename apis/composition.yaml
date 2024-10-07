@@ -52,6 +52,7 @@ spec:
                       enabled: false
                     persistence:
                       enabled: false
+                  wait: true
                 rollbackLimit: 3
             patches:
               - type: FromCompositeFieldPath
@@ -69,6 +70,9 @@ spec:
               - type: FromCompositeFieldPath
                 fromFieldPath: spec.parameters.helm.chart.version
                 toFieldPath: spec.forProvider.chart.version
+              - type: FromCompositeFieldPath
+                fromFieldPath: spec.parameters.helm.wait
+                toFieldPath: spec.forProvider.wait
               - type: FromCompositeFieldPath
                 fromFieldPath: spec.parameters.passwordSecretRef.namespace
                 toFieldPath: spec.forProvider.set[0].valueFrom.secretKeyRef.namespace
