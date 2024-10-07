@@ -1,6 +1,9 @@
 apiVersion: platform.upbound.io/v1alpha1
 kind: App
 metadata:
+  annotations:
+    render.crossplane.io/composition-path: apis/composition.yaml
+    render.crossplane.io/function-path: examples/functions.yaml
   name: configuration-app
   namespace: default
 spec:
