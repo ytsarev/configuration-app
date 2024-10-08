@@ -1,4 +1,4 @@
-# Project Setup
+# Project Setup just test
 PROJECT_NAME := configuration-app
 PROJECT_REPO := github.com/upbound/$(PROJECT_NAME)
 
