@@ -9,5 +9,6 @@ jobs:
     uses: upbound/official-providers-ci/.github/workflows/pr-comment-trigger.yml@parametrize-uptest-runner
     with:
       package-type: configuration
+      runs-on: ubuntu-24.04
     secrets:
       UPTEST_CLOUD_CREDENTIALS: ${{ secrets.UPTEST_CLOUD_CREDENTIALS }}
