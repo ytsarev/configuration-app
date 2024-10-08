@@ -11,7 +11,7 @@ PLATFORMS ?= linux_amd64
 # ====================================================================================
 # Setup Kubernetes tools
 
-UP_VERSION = v0.32.1
+UP_VERSION = v0.34.0
 UP_CHANNEL = stable
 UPTEST_VERSION = v1.1.2
 UPTEST_CLAIMS ?= examples/app-claim.yaml
